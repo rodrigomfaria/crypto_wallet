@@ -1,11 +1,11 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  descrition: MyString
+  description: MyString
   acronym: MyString
   url_image: MyString
 
 two:
-  descrition: MyString
+  description: MyString
   acronym: MyString
   url_image: MyString
