@@ -1,6 +1,11 @@
-<h1>Enviorement <%= @meu_nome %></h1>
-<p><strong>Data:</strong><%= data_br(Date.today)%>
+<h1>Seja Bem-Vindo!</h1>
+<p>O Idioma usado nessa aplicação é: <strong><%= t('actual_locale') %> </strong></p>
+<p><strong>Data: </strong><%= l(Date.today) %></p>
+<p><strong><%= t('hello') %> </strong></p>
 <%= render "menu"%>
 <p>
-    Você está em ambiente de <strong><%= ambiente_rails %></strong>
+    Você está em ambiente de <strong><%= rails_env %></strong>
+</p>
+<p>
+  Eu sou uma variável de instência/sessão <strong><%= @meu_nome %></strong>
 </p>

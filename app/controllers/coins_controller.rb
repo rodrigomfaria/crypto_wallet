@@ -59,7 +59,7 @@ class CoinsController < ApplicationController
   end
 
   private
-    def set_mining_type_otions
+    def set_mining_type_options
       @mining_type_options = MiningType.all.pluck(:description, :id)
     end
 

@@ -1,15 +1,18 @@
 module ApplicationHelper
+    def locale
+        I18n.locale == :en ? "Estados Unidos" : "Portugês do Brasil"
+    end
     def data_br(data_us)
         data_us.strftime("%d/%m/%y")
     end
 
-    def ambiente_rails()
+    def rails_env()
         if Rails.env.development?
-            "Desenvolvimento"
+            "Develop"
         elsif Rails.env.production?
-            "Produção"
+            "Production"
         else
-            "Teste"
+            "Test"
         end
     end
 end
